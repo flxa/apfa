@@ -1,0 +1,63 @@
+.grid {
+	width: 100%;
+	.row {
+		div {
+			/*background: $link-color;
+			color: white;
+			&:hover {
+				background: darken($link-color,20%);
+			}*/
+			color: $text-color;
+			h3 {
+				color: $link-color;
+			}
+		}
+		@extend .clearfix;
+		.g0-1 {
+			width: 100%;
+			float: none;
+		}
+		.g2-1 {
+			width: 100%;
+			float: left;
+			@media (min-width: 600px) {
+				width: 50%;
+			}
+		}
+		.g3-1 {
+			width: 100%;
+			float: left;
+			@media (min-width: 600px) {
+				width: 33.3333%;
+			}
+		}
+		.g3-2 {
+			width: 100%;
+			float: left;
+			@media (min-width: 600px) {
+				width: 66.6666%;
+			}
+		}
+		.g4-1 {
+			width: 100%;
+			float: left;
+			@media (min-width: 600px) {
+				width: 25%;
+			}
+		}
+		.g4-2 {
+			width: 100%;
+			float: left;
+			@media (min-width: 600px) {
+				width: 50%;
+			}
+		}
+		.g4-3 {
+			width: 100%;
+			float: left;
+			@media (min-width: 600px) {
+				width: 75%;
+			}
+		}
+	}
+}

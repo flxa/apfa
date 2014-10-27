@@ -1,0 +1,189 @@
+
+.woocommerce-page {
+
+}
+
+.woocommerce {
+	ul.products {
+		li.product {
+			background: white;
+			@media (max-width: 480px) {
+				width: 100%;
+				display: block;
+				float: none;
+			}
+			a {
+				color: $highlight;
+				img {
+					box-shadow: none;
+					&:hover {
+						box-shadow: none;
+					}
+				}
+				h3, span.price {
+					padding-left: 10px;
+					padding-right: 10px; 
+				}
+				span.price ins {
+					color: $highlight;
+				}
+			}
+			a.button {
+				margin: 0 10px 10px;
+				background: transparent;
+				border: 2px solid $highlight;
+				box-shadow: none;
+				text-shadow: none;
+				border-radius: 0;
+				&:hover {
+					background: $highlight;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+.woocommerce ul.products li.product a:hover img, .woocommerce-page ul.products li.product a:hover img {
+	box-shadow: none;
+}
+.woocommerce span.onsale, .woocommerce-page span.onsale {
+	width: 40px;
+	min-height: 32px;
+	min-width: 32px;
+	padding: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	line-height: 32px;
+	top: 6px;
+	left: 6px;
+	margin: 0;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: $highlight;
+	background: -webkit-gradient(linear,left top,left bottom,from($highlight),to(darken($highlight,10%)));
+	background: -webkit-linear-gradient($highlight,darken($highlight,10%));
+	background: -moz-linear-gradient(center top,$highlight 0%,darken($highlight,10%) 100%);
+	background: -moz-gradient(center top,$highlight 0%,darken($highlight,10%) 100%);
+	text-shadow: 0 -1px 0 $highlight;
+	color: #ffffff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.twentyfourteen .tfwc {
+	max-width: none;
+}
+
+/*
+
+@media only screen and (min-width: 480px) {
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+		width: 48%;
+		float: left;
+		clear: both;
+	}
+}
+@media only screen and (min-width: 769px) {
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+		width: 24%;
+		float: left;
+	}
+}
+
+*/
+
+
+
+.woocommerce-page #content div.product div.images img {
+	background: white;
+	box-shadow: none;
+}
+
+.woocommerce .woocommerce-message, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-message, .woocommerce-page .woocommerce-error, .woocommerce-page .woocommerce-info {
+	padding: 1em 1em 1em 3.5em !important;
+	margin: 0 0 2em !important;
+	position: relative;
+	border-radius: 0;
+	background: transparent;
+	color: $template-font-color;
+	text-shadow: none;
+	list-style: none outside !important;
+	width: auto;
+	box-shadow: none;
+	border: 3px solid $template-font-color;
+}
+
+.woocommerce .woocommerce-message:before, .woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-message:before, .woocommerce-page .woocommerce-error:before, .woocommerce-page .woocommerce-info:before {
+	background-color: $template-font-color;
+	border-radius: 0;
+}
+
+.woocommerce .woocommerce-error, .woocommerce-page .woocommerce-error {
+	color: tomato;
+	border-color: tomato;
+}
+
+.woocommerce .woocommerce-message, .woocommerce-page .woocommerce-message {
+	color: green;
+	border-color: green;
+}
+
+.woocommerce .woocommerce-error:before {
+	background-color: tomato;
+}
+
+.woocommerce .woocommerce-message:before {
+	background-color: green;
+}
+
+
+
+
+.woocommerce table.shop_table, .woocommerce-page table.shop_table {
+	border: 0;
+}
+
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button {
+	padding: 6px 10px;
+	font-weight: bold;
+	border-radius: 0;
+	text-shadow: none;
+	color: $template-font-color;
+	text-shadow: none;
+	border: 3px solid $template-font-color;
+	background: transparent;
+	box-shadow: none;
+	transition: all .5s ease-out;
+	&:hover {
+		background: $template-font-color;
+		color: white;
+	}
+}
+
+
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page #content input.button.alt {
+	background: transparent;
+	border-color: $template-font-color;
+	color: $template-font-color;
+	text-shadow: none;
+	&:hover {
+		background: $template-font-color;
+		color: white;
+	}
+}
+
+.woocommerce  ul.product_list_widget li img {
+	background: white;
+	box-shadow: none;
+}
+
+.woocommerce.widget_shopping_cart a.button {
+	color: white;
+	border-color: white;
+	&:hover {
+		background: white;
+	}
+}
